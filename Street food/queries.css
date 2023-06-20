@@ -1,0 +1,130 @@
+@media only screen and (max-width: 1150px) {
+  .photo-segment {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .col.span-1-of-3.one-reference {
+    width: 48.5%;
+    margin-left: 1.5%;
+  }
+  .one-reference:nth-child(3) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .nav-bar nav ul li {
+    display: block;
+    z-index: 500;
+  }
+  /*  .nav-background {
+      display: none; 
+      } 
+  */
+  .mobile-nav-back {
+    height: 170px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid orange;
+    display: none;
+    z-index: 10;
+  }
+  nav .mobile-nav-icon {
+    display: inline-block;
+    z-index: 200;
+    position: fixed;
+    right: 2%;
+  }
+  nav ul {
+    display: none;
+    z-index: 200;
+  }
+  #logo img {
+    max-width: 65px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /***** spagety info *****/
+  .spagety-info .span-1-of-2 {
+    width: 95.5%;
+  }
+  .spagety-info img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .text-spagety p {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  /***** photo gallery *****/
+  .photo-segment .col {
+    margin-left: 0;
+  }
+  .photo-segment li {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  /***** photo gallery *****/
+  .header-text {
+    width: 100%;
+    margin-left: 45px;
+  }
+
+  .header-text h1 {
+    text-align: center;
+  }
+
+  .btn.btn-full {
+    display: block;
+    text-align: center;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .btn.btn-empty {
+    display: block;
+    text-align: center;
+    margin-right: 90px;
+    margin-left: 90px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .nav-background .col.col.span-1-of-3.one-reference {
+    width: 100%;
+    margin-top: -10px;
+    margin-left: 50px;
+    padding-right: 70px;
+    font-size: 13px;
+  }
+
+  .photo-name {
+    float: right;
+  }
+
+  .photo-name p {
+    font-size: 14px;
+    font-style: normal;
+  }
+
+  .photo-name img {
+    max-width: 40px;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-left: 28px;
+  }
+  #logo img {
+    margin-left: 2%;
+  }
+}

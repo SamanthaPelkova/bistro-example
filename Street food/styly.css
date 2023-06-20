@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***** reusable *****/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.heading-main h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.heading-main h2:after {
+  content: "";
+  display: block; /* další element bude na dalším řádku */
+  width: 150px;
+  border-bottom: 2px solid orange;
+  margin: 20px auto;
+}
+.empty-space {
+  height: 50px;
+}
+
+/***** header *****/
+header {
+  background: linear-gradient(rgba(20, 17, 17, 0.4), rgba(0, 0, 0, 0.2)),
+    url("img/dp_Akis_Street_Food_Book_20190525_0134.jpeg");
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.nav-background {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 50;
+  border-bottom: 2px solid orange;
+}
+#logo img {
+  width: 65px;
+  position: absolute;
+  top: 3%;
+  left: 4%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+nav ul {
+  float: right;
+  margin-top: 9px;
+  position: fixed;
+  margin-left: 37%;
+  z-index: 100;
+}
+
+nav ul li {
+  display: inline-block; /* elementy jsou vedle sebe */
+  color: #fff;
+  margin-left: 15px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  transition: border-bottom 1s;
+  border-bottom: 2px solid orange;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+}
+
+.header-text h1 {
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  word-spacing: 3.5px;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background: black;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  transition: background 1.2s;
+  background: orange;
+  border: 1px solid black;
+}
+
+.btn-empty {
+  margin-left: 10px;
+  background: transparent;
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+  transition: background 1.2s;
+  background: black;
+  border: 1px solid rgb(202, 172, 72);
+}
+
+/***** Mobile navigation *****/
+.mobile-nav-icon {
+  float: right;
+  margin-top: 5px;
+  display: none;
+}
+
+/***** About us *****/
+
+/* .spagety-example img {
+/*    width: 100%; /*roztahuje po celé šířce toho sloupečku, je mezi imgs mezera*/
+/*    border-radius: 10px; /* zaobluje obrázek*/
+/*    box-shadow: 4px 6px 10px rgb(37, 36, 36); /*stínování obrázku, musí být vždy 4 hodnoty*/
+/*  } */
+
+.aboutus p {
+  text-align: center;
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 18px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+/***** Our spagety *****/
+.spagety-info img {
+  width: 100%;
+  height: 300px;
+  margin-top: -18px;
+  border-radius: 10px;
+  box-shadow: 4px 6px 10px rgb(37, 36, 36);
+}
+
+.text-spagety {
+  margin-bottom: 20px;
+}
+
+.text-spagety div {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #000;
+  text-align: center;
+  border-radius: 50%;
+  padding: 12px;
+  float: left;
+}
+
+.text-spagety p {
+  margin-left: 55px;
+  font-size: 15px;
+}
+
+/***** Reference *****/
+.reference {
+  background: linear-gradient(rgba(20, 17, 17, 0.4), rgba(0, 0, 0, 0.2)),
+    url("img/foodtruck-39.jpeg");
+  background-attachment: fixed;
+}
+.reference h2 {
+  color: white;
+  padding-top: 30px;
+  font-size: 25px;
+}
+.reference h2:after {
+  border-bottom: 2px solid white;
+}
+
+.one-reference {
+  color: white;
+  font-size: 20px;
+}
+.one-reference p {
+  font-style: italic; /* kurzíva */
+}
+
+.photo-name {
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.photo-name p {
+  padding: 18px;
+  margin-left: 70px;
+  font-style: normal;
+}
+.photo-name img {
+  width: 60px;
+  border-radius: 50%;
+  float: left;
+}
+
+/***** Photo gallery *****/
+
+.photo-segment li {
+  list-style-type: none;
+  background-color: black;
+  overflow: hidden;
+  height: 300px;
+}
+
+.photo-segment img {
+  width: 100%;
+  opacity: 0.6;
+  transform: scale(1.15);
+}
+
+.photo-segment img:hover {
+  transition: transform 0.5s, opacity 0.5s;
+  transform: scale(1);
+  opacity: 0.85;
+}
+
+/* úprava h2 - nadpisků vedle fotek ve fotogalerii */
+.photos {
+  width: 100%;
+  border-bottom: 3px solid orange;
+  font-size: 20px;
+}
+
+/***** Contact-form *****/
+.contact-form {
+  max-width: 700px;
+  text-align: center;
+}
+.contact-form input {
+  width: 80%;
+  margin: 5px 0px;
+  padding: 7px;
+  border: 2px solid orange;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgb(247, 186, 74);
+}
+.contact-form textarea {
+  width: 80%;
+  margin: 5px 0px;
+  padding: 7px;
+  border: 2px solid orange;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgb(247, 186, 74);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="submit"] {
+  background-color: orange;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  transition: background-color 0.5s;
+  background-color: rgb(63, 63, 63);
+  color: orange;
+}
+
+/***** Footer *****/
+.footer-page {
+  background-color: orange;
+  margin-top: 30px;
+  color: white;
+}
+.social {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.social p {
+  display: inline; /* dá elementy vedle sebe */
+  margin-right: 15px;
+}
+
+.social p a:link,
+.social p a:visited {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.social p a:hover,
+.social p a:active {
+  color: black;
+}
+
+.footer-text {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/***** Stop floating *****/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
